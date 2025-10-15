@@ -11,22 +11,22 @@ plan:
         - contract-publish:
             contract-name: mock-oracle
             expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
-            cost: 60030
-            path: "contracts\\mock-oracle.clar"
+            cost: 65440
+            path: contracts/mock-oracle.clar
             anchor-block-only: true
-            clarity-version: 1
+            clarity-version: 3
         - contract-publish:
             contract-name: mock-sbtc-v1
             expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             cost: 25790
-            path: "contracts\\mock-sbtc-v1.clar"
+            path: contracts/mock-sbtc-v1.clar
             anchor-block-only: true
-            clarity-version: 1
+            clarity-version: 3
         - contract-publish:
             contract-name: money-market-core
             expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
-            cost: 316530
-            path: "contracts\\money-market-core.clar"
+            cost: 316590
+            path: contracts/money-market-core.clar
             anchor-block-only: true
-            clarity-version: 1
-      epoch: "2.05"
+            clarity-version: 3
+      epoch: "3.0"
