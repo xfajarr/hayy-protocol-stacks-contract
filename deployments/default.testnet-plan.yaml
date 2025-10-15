@@ -2,31 +2,31 @@
 id: 0
 name: Testnet deployment
 network: testnet
-stacks-node: "https://api.testnet.hiro.so"
+stacks-node: "https://stacks-node-api.testnet.stacks.co"
 bitcoin-node: "http://blockstack:blockstacksystem@bitcoind.testnet.stacks.co:18332"
 plan:
   batches:
     - id: 0
       transactions:
         - contract-publish:
-            contract-name: mock-oracle-v2
-            expected-sender: ST1AY6BBPTAQ5YBYEED1MRAB6FYHYB7NF1REJ3WS6
-            cost: 60030
-            path: "contracts\\mock-oracle.clar"
+            contract-name: mock-oracle
+            expected-sender: ST3J27N1KGDYTH6H371PJWWS4TYPYG86J5G4588DH
+            cost: 6922603
+            path: contracts/mock-oracle.clar
             anchor-block-only: true
-            clarity-version: 1
+            clarity-version: 3
         - contract-publish:
-            contract-name: mock-sbtc-v2
-            expected-sender: ST1AY6BBPTAQ5YBYEED1MRAB6FYHYB7NF1REJ3WS6
-            cost: 25790
-            path: "contracts\\mock-sbtc-v1.clar"
+            contract-name: mock-sbtc-v1
+            expected-sender: ST3J27N1KGDYTH6H371PJWWS4TYPYG86J5G4588DH
+            cost: 6898968
+            path: contracts/mock-sbtc-v1.clar
             anchor-block-only: true
-            clarity-version: 1
+            clarity-version: 3
         - contract-publish:
             contract-name: money-market-core
-            expected-sender: ST1AY6BBPTAQ5YBYEED1MRAB6FYHYB7NF1REJ3WS6
-            cost: 316590
-            path: "contracts\\money-market-core.clar"
+            expected-sender: ST3J27N1KGDYTH6H371PJWWS4TYPYG86J5G4588DH
+            cost: 7071877
+            path: contracts/money-market-core.clar
             anchor-block-only: true
-            clarity-version: 1
-      epoch: "2.05"
+            clarity-version: 3
+      epoch: "3.0"
